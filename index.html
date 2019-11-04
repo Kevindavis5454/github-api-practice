@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="description" content="Github API Practice page"
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kevin's Git Hub API Practice</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<form id="js-form">
+    <label for="search-term">Search term</label>
+    <input type="text" name="search-term" id="js-user-handle" required>
+
+    <label for="max-results">Maximum results to return</label>
+    <input type="number" name="max-results" id="js-max-results" value="10">
+
+    <input type="submit" value="Go!">
+</form>
+
+<section class="results hidden">
+    <h2>User Repo's</h2>
+</section>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
