@@ -18,6 +18,7 @@ function getUserRepo() {
 
 function displayResults(responseJson) {
     console.log(responseJson);
+    $('.results').empty();
     if (responseJson.status === 'error') {
         $('.results').append(`<p> Git hub User Not found</p>`);}
     else {
